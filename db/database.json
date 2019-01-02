@@ -1,0 +1,40 @@
+[{
+    "name" : "Full Name",
+    "license" : {
+        "SPDX identifier" : "MIT",
+        "isOsiApproved" : true
+    },
+    "support" : {
+        "exists": false,
+        "repoLastUpdated": "2018-11-1",
+        "comment": "Issues will often get responses within a few days. Bugs usually fixed within weeks"
+    },
+    "parent-group": "some collection",
+    "related-to" : ["microsoft-example", "example-for-mac-os"]
+},
+{
+    "name" : "LibreOffice Writer",
+    "license" : {
+        "SPDX identifier" : "MPL-2.0",
+        "isOsiApproved" : true
+    },
+    "support" : {
+        "community": "extensive",
+        "professional": "certified",
+        "activelyDeveloped": true
+    },
+    "parent-group": "Libre Office Suite",
+    "related-to" : ["microsoft-word"]
+},
+{
+    "name" : "Microsoft Word",
+    "licence" : {
+        "code" : "Copyright"
+    },
+    "support" : {
+        "professional" : "certified",
+        "activelyDeveloped" : true
+    },
+    "parent-group": "Microsoft Office",
+    "related-to": ["libre-office-writer"]
+}]
