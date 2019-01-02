@@ -27,7 +27,7 @@
     },
     "development" : {
         "developedAtUrl": "https://github_or_other_repository.com/reponame",
-        "lastActivity": "Wed Jan 02 2019 15:05:47 GMT+0000 (Greenwich Mean Time)".
+        "lastActivity": "Wed Jan 02 2019 15:05:47 GMT+0000 (Greenwich Mean Time)",
         "developedBy": "Microsoft"
     },
     "parent-group": "some collection", // e.g. for Microsoft word the value would be microsoft office
