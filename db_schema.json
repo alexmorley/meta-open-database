@@ -1,35 +1,45 @@
 {
     "name" : "Official Name of product",
+    "website" : "https://official.com/website-url",
     "license" : {
         "SPDX identifier" : "MIT", // means we can look up other attributes via their databse
-        "isOsiApproved" : true
+        "isOsiApproved" : true,
+        "isFsfApproved" : true
     },
     "data": {
         "gdprCompliant": false,
+        "implementsOpenDataStandards": false,
+        "supportedPlatforms": [ "Windows", "Mac", "Linux", "Android", "iOS" ],
+        "comments": "Data can only be exported in propritary file formats. Converters are avaialable elsewhere"
+    },
+    "features" : {
+        "allowsDataExport": true,
         "decentralisedCapable": false,
         "selfhostCapable": false,
-        "allowsDataExport": true,
-        "implementsOpenDataStandards": false,
-        "comments": "Data can only be exported in propritary file formats. Converters are avaialable elsewhere"
     },
     "sustainability": {
         "activeSince": "Wed Jan 02 2019 15:05:47 GMT+0000 (Greenwich Mean Time)",
         "supportedBy": ["NUMFocus"],
         "acceptsDonations": true,
         "donateUrl": "donate://here",
-        "businessModel": "Free Software, Paid Service",
-        "priceAnnualUSD": "149",
-        "priceLifetimeUSD": "355"
+        "businessModel": [ "Free Software", "Paid Service" ],
+        "pricing": {
+          "priceInUSD": "149",
+          "priceCycle" : "monthly", // Other values : yearly, lifetime, ...
+        }
     },
     "support" : {
         "exists": false,
-        "comment": "Issues will often get responses within a few days. Bugs usually fixed within weeks"
+        "comment": "Issues will often get responses within a few days. Bugs usually fixed within weeks",
+        "bugReportUrl" : "https://link.to/bugreport"
     },
     "development" : {
         "developedAtUrl": "https://github_or_other_repository.com/reponame",
         "lastActivity": "Wed Jan 02 2019 15:05:47 GMT+0000 (Greenwich Mean Time)",
+        "latestRelease" : "v1.0.0",
         "developedBy": "Microsoft"
     },
     "parent-group": "some collection", // e.g. for Microsoft word the value would be microsoft office
-    "related-to" : ["microsoft-example", "example-for-mac-os"]
+    "related-to" : ["microsoft-example", "example-for-mac-os"],
+    "categories" : [ "Office", "..." ]
 }
