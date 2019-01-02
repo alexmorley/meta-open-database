@@ -20,7 +20,7 @@
         "businessModel": "Free Software, Paid Service",
         "priceAnnualUSD": "149",
         "priceLifetimeUSD: "355"
-    }
+    },
     "support" : {
         "exists": false,
         "comment": "Issues will often get responses within a few days. Bugs usually fixed within weeks"
