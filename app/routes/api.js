@@ -1,35 +1,80 @@
 "use strict"
 var express = require('express');
 var router = express.Router();
-var docs = `
-API Documentation
-
-GET /list List the names of all software entries
-GET /list?field=something List a different field of all software entries
-`
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
 
 var API = [
-{
-  type: "GET",
-  endpoint: "list",
-  params: "field",
-  paramsDefault: "name",
-  docString: "List the names of all software entries",
-  func: function(req, res, next) {
-    res.send("Not Yet Implemented.");
+  {
+    type: "GET",
+    endpoint: "dump",
+    params: [],
+    paramsDefault: [],
+    docString: "Dump database as JSON Array.",
+    func: dump
+  },{
+    type: "GET",
+    endpoint: "list",
+    params: ["field"],
+    paramsDefault: ["name"],
+    docString: "List the names of all software entries",
+    func: function(req, res, next) {
+      res.send("Not Yet Implemented.");
+    }
+  },
+  {
+    type: "GET",
+    endpoint: "find",
+    params: ["selector", "fields", "options"],
+    paramsDefault: ["{}", "name", "{}"],
+    docString: `Query database. See <a href="https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find">MongoDBClient find API</a> for more info.`,
+    func: find
+    //function(req, res, next) {
+    //  res.send("Not Yet Implemented.");
+    //}
   }
-},
-{
-  type: "GET",
-  endpoint: "mongo",
-  params: "",
-  paramsDefault: "",
-  docString: "Pass through request to MongoDB API",
-  func: function(req, res, next) {
-    res.send("Not Yet Implemented.");
-  }
-}
 ]
+
+function dump(req, res, next) {
+  // Connection URL
+  var url = 'mongodb://localhost:3001/test';
+  // Use connect method to connect to the Server
+  MongoClient.connect(url, {useNewUrlParser: true }, function(err, db) {
+    assert.equal(null, err);
+    db.db().collection('mod').find().toArray(function (err,count) {
+      if(!(err)){
+        res.send(count)
+      } else {
+        DefaultErrorHandler(err, req, res, next)
+      }
+    });
+    db.close();
+  });
+}
+
+function find(req, res, next) {
+  // Connection URL
+  var url = 'mongodb://localhost:3001/test';
+  // Use connect method to connect to the Server
+  MongoClient.connect(url, {useNewUrlParser: true }, function(err, db) {
+    assert.equal(null, err);
+    let fields = {name: 1}
+    if(req.query.fields) {
+      console.log(req.query.fields);
+      fields = JSON.parse(req.query.fields);
+      console.log(fields);
+    }
+    db.db().collection('mod').find({}, {fields: fields}).toArray(function (err,count) {
+      if(!(err)){
+        res.send(count)
+      } else {
+        DefaultErrorHandler(err, req, res, next)
+      }
+    });
+    db.close();
+  });
+}
+
 
 /* Register all endpoints */
 API.forEach(function (el,i) {
@@ -42,15 +87,31 @@ router.get('/', function(req, res, next) {
   API.forEach(function (el,i) {
     var key = el.endpoint;
     console.log(key);
-    // TODO: Support mutliple parameters (with defaults)
+    if(el.params.length > 0) {
+      var params = el.params.map((e,i,arr) => {
+        console.log(el.paramsDefault)
+        let el_d = el.paramsDefault[i];
+        return `${e}=${el_d}`
+      }).join('&');
+    } else {
+      var params = "";
+    }
     res.write(`<p>
-        <b>${el.type}</b> 
-        <i>/${key}?${el.params}=${el.paramsDefault}</i>
-        ${el.docString}
-        </p>`);
+      <b>${el.type}</b> 
+      <i>/${key}?${params}</i>
+      ${el.docString}
+      </p>`);
   });
   res.end();
 });
 
+/* Handle Errors */
+function asdfasDefaultErrorHandler(err, req, res, next) {
+  if (res.headersSent) {
+    return next(err)
+  }
+  res.status(500)
+  res.render('error', { error: err })
+}
 
 module.exports = router;
