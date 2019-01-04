@@ -1,7 +1,11 @@
+start:
+	mkdir -p mongo
+	mongod --dbpath ./mongo --port $(PORT)
+
 rebuild: import export
 
 import:
-	mongoimport database.json --collection meta-open-database --jsonArray --drop
+	mongoimport database.json --port $(PORT) --collection mod --jsonArray --drop
 
 export:
-	mongoexport --collection meta-open-database --pretty --out mongo-backup.json --jsonArray
+	mongoexport --collection mod --port $(PORT) --pretty --out mongo-backup.json --jsonArray

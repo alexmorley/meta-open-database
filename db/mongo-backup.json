@@ -1,6 +1,6 @@
 [{
 	"_id": {
-		"$oid": "5c2ca9e1a7d5ca4b61c31df1"
+		"$oid": "5c2f1c34e8311a942c9b9191"
 	},
 	"name": "Full Name",
 	"license": {
@@ -20,7 +20,24 @@
 },
 {
 	"_id": {
-		"$oid": "5c2ca9e1a7d5ca4b61c31df2"
+		"$oid": "5c2f1c34e8311a942c9b9192"
+	},
+	"name": "Microsoft Word",
+	"licence": {
+		"code": "Copyright"
+	},
+	"support": {
+		"professional": "certified",
+		"activelyDeveloped": true
+	},
+	"parent-group": "Microsoft Office",
+	"related-to": [
+		"libre-office-writer"
+	]
+},
+{
+	"_id": {
+		"$oid": "5c2f1c34e8311a942c9b9193"
 	},
 	"name": "LibreOffice Writer",
 	"license": {
@@ -35,23 +52,6 @@
 	"parent-group": "Libre Office Suite",
 	"related-to": [
 		"microsoft-word"
-	]
-},
-{
-	"_id": {
-		"$oid": "5c2ca9e1a7d5ca4b61c31df3"
-	},
-	"name": "Microsoft Word",
-	"licence": {
-		"code": "Copyright"
-	},
-	"support": {
-		"professional": "certified",
-		"activelyDeveloped": true
-	},
-	"parent-group": "Microsoft Office",
-	"related-to": [
-		"libre-office-writer"
 	]
 }]
 
