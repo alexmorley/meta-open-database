@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Meta Open Database' });
+  res.render('index', { title: 'Meta Open DB' });
 });
 
 module.exports = router;

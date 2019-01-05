@@ -60,9 +60,7 @@ function find(req, res, next) {
     assert.equal(null, err);
     let fields = {name: 1}
     if(req.query.fields) {
-      console.log(req.query.fields);
       fields = JSON.parse(req.query.fields);
-      console.log(fields);
     }
     db.db().collection('mod').find({}, {fields: fields}).toArray(function (err,count) {
       if(!(err)){
@@ -86,10 +84,8 @@ router.get('/', function(req, res, next) {
   res.write(`<h1>API Docs</h1>`);
   API.forEach(function (el,i) {
     var key = el.endpoint;
-    console.log(key);
     if(el.params.length > 0) {
       var params = el.params.map((e,i,arr) => {
-        console.log(el.paramsDefault)
         let el_d = el.paramsDefault[i];
         return `${e}=${el_d}`
       }).join('&');
