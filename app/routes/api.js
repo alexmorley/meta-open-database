@@ -81,7 +81,7 @@ API.forEach(function (el,i) {
 
 /* Show API documentation when no endpoint given */
 router.get('/', function(req, res, next) {
-  res.write(`<h1>API Docs</h1>`);
+  let html = [];
   API.forEach(function (el,i) {
     var key = el.endpoint;
     if(el.params.length > 0) {
@@ -92,17 +92,18 @@ router.get('/', function(req, res, next) {
     } else {
       var params = "";
     }
-    res.write(`<p>
+    html.push(`<p>
       <b>${el.type}</b> 
       <i>/${key}?${params}</i>
       ${el.docString}
       </p>`);
   });
-  res.end();
+  
+  res.render('api', {api : html.join('')});
 });
 
 /* Handle Errors */
-function asdfasDefaultErrorHandler(err, req, res, next) {
+function DefaultErrorHandler(err, req, res, next) {
   if (res.headersSent) {
     return next(err)
   }
