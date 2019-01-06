@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 120px;
+}
+
+#header a {
+  text-decoration: underline;
+  text-color: black;
+}
+
+#login input {
+  display: block;
+  font-size: 12px;
+}
+
+#login {
+  display: none;
+}
