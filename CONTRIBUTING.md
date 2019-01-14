@@ -1,3 +1,6 @@
+:warning: **Work in progress** :warning:
+
+This guide isn't ready yet. In the meantime, if you have any question on how you could contribute to this project, feel free to [open an issue](https://github.com/alexmorley/meta-open-database/issues).
 
 # Introduction
 
