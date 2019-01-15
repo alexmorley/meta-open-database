@@ -1,3 +1,7 @@
+start_dev:
+	mkdir -p ./mongo
+	mongod --dbpath ./mongo --port $(PORT)
+
 start:
 	mkdir -p /db/mongo-1
 	mongod --dbpath /db/mongo-1 --port $(PORT)
