@@ -75,7 +75,6 @@ function find(req, res, next) {
   });
 }
 
-
 /* Register all endpoints */
 API.forEach(function (el,i) {
   router[el.type.toLowerCase()](`/${el.endpoint}`, el.func);
