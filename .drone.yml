@@ -8,28 +8,25 @@ steps:
   - cd app
   - npm install
   - npm test
+  - cd ..
+  - cp -R app/* /mnt/
+  volumes:
+    - name: web
+      path: /mnt
 
 - name: deploy
-  image: alpine
+  image: ubuntu:18.04
   priviledged: true
   commands:
-  - ls -l /bin/systemctl
-  - exec /bin/systemctl status meta-open-db.service
+  - echo 0
   volumes:
-  - name: systemd
-    path: /run/systemd
-  - name: dbus
-    path: /var/run/dbus
-  - name: systemctl
-    path: /bin/systemctl
+   - name: systemctl
+     path: /bin/systemctl
 
 volumes:
-- name: systemd
+- name: web
   host:
-    path: /run/systemd
-- name: dbus
-  host:
-    path: /var/run/dbus
+    path: /var/www/meta-open-database
 - name: systemctl
   host:
     path: /bin/systemctl
