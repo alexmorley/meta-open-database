@@ -9,7 +9,7 @@ steps:
   - npm install
   - npm test
   - cd ..
-  - cp -R app/* /mnt/
+  - cp -R --remove-destination app/* /mnt/
   volumes:
     - name: web
       path: /mnt
