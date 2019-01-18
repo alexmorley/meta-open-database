@@ -36,10 +36,12 @@ var API = [
 ]
 
 function dump(req, res, next) {
+  console.log("now");
   // Connection URL
-  var url = 'mongodb://localhost:3001/test';
+  var url = 'mongodb://127.0.0.1:3001/test';
   // Use connect method to connect to the Server
   MongoClient.connect(url, {useNewUrlParser: true }, function(err, db) {
+    console.log("now");
     assert.equal(null, err);
     db.db().collection('mod').find().toArray(function (err,count) {
       if(!(err)){
