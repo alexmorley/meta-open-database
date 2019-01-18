@@ -1,0 +1,16 @@
+[Unit]
+Description=meta-open-database.com application
+Documentation=github.com/alexmorley/meta-open-database
+After=network.target
+
+[Service]
+Environment=PORT=3000
+Environment=PATH=/home/alexmorley/.nvm/versions/node/v11.6.0/bin
+Type=simple
+User=alexmorley
+WorkingDirectory=/var/www/meta-open-database
+ExecStart=/home/alexmorley/.nvm/versions/node/v11.6.0/bin/node ./bin/www
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
