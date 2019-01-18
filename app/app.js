@@ -1,9 +1,11 @@
 var path = require('path');
 var logger = require('morgan');
 var express = require('express');
+var mongoose = require('mongoose');
+var session = require('express-session');
 var createError = require('http-errors');
 var cookieParser = require('cookie-parser');
-var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
 
 var indexRouter = require('./routes/index');
 var userRouter = require('./routes/user');
@@ -30,18 +32,11 @@ app.use(express.static(path.join(__dirname, 'public'))); // serve static files
 app.use(session({ // for tracking logins
   secret: 'work hard',
   resave: true,
-  saveUninitialized: false
+  saveUninitialized: false,
+  store: new MongoStore({
+    url: 'mongodb://localhost:3001/users'
+  })
 }));
-
-function requiresLogin(req, res, next) {
-  if (req.session && req.session.userId) {
-    return next();
-  } else {
-    var err = new Error('You must be logged in to view this page.');
-    err.status = 401;
-    return next(err);
-  }
-}
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);

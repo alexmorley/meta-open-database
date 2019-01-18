@@ -3,6 +3,12 @@ var express = require('express');
 var bcrypt = require('bcrypt');
 var router = express.Router();
 
+// API
+// GET login
+// GET logout
+// POST login
+// POST register
+
 var db = mongoose.connect('mongodb://localhost:3001/users');
 
 var UserSchema = new mongoose.Schema({
@@ -123,6 +129,18 @@ router.post('/login', function (req, res, next) {
 
   } else {
     res.render('login', check_result);
+  }
+});
+
+router.get('/logout', function(req, res, next) {
+  if (req.session) {
+    req.session.destroy(function(err) {
+      if(err) {
+        return next(err);
+      } else {
+        return res.redirect('/');
+      }
+    });
   }
 });
 
