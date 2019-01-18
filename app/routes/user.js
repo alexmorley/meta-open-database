@@ -63,7 +63,7 @@ function checkRegister(body) {
   if (!(body.email &&
     body.password &&
     body.passwordConf)) {
-    return { ok: false,
+    return { ok: false, 
       reason: 'Woops it looks like you didn\'t fill in all the fields!'
     }
   }
