@@ -1,3 +1,9 @@
+var path = require('path');
+var logger = require('morgan');
+var express = require('express');
+var mongoose = require('mongoose');
+var Handlebars = require('handlebars');
+var session = require('express-session');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -10,6 +16,21 @@ var apiRouter = require('./routes/api');
 var app = express();
 
 // view engine setup
+var handlebars = require('express-handlebars').create({
+  layoutsDir: path.join(__dirname, "views/layouts"),
+  partialsDir: path.join(__dirname, "views/partials"),
+  helpers: {
+    ifObject: function(item, options) {
+      if(typeof item === "object") {
+        return options.fn(this);
+      } else {
+        return options.inverse(this);
+      }
+    }},
+  defaultLayout: 'layout',
+  extname: 'hbs'
+});
+app.engine('hbs', handlebars.engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 

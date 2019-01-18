@@ -1,0 +1,16 @@
+<h3> WIP </h3>
+<form id="add" action="/add" method="post">
+  <p><b>{{ reason }}</b></p>
+  {{#each fields}}
+    {{#ifObject this}}
+      <h4>{{this.meta.longname}}:</h4>
+      {{#each this}}
+        <em>{{this.longname}}</em> <input id="{{@key}}" type="text" name={{@key}}>
+      {{/each}}
+    {{else}}
+      <h4>{{this.longname}}:</h4>
+      <input id="{{@key}}" type="text" name={{@key}}>
+    {{/ifObject}} 
+  {{/each}}
+  <input class="button" type="submit" value="Submit">
+</form>
