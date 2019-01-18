@@ -2,15 +2,13 @@ var path = require('path');
 var logger = require('morgan');
 var express = require('express');
 var mongoose = require('mongoose');
-var Handlebars = require('handlebars');
 var session = require('express-session');
 var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var MongoStore = require('connect-mongo')(session);
 
 var indexRouter = require('./routes/index');
+var userRouter = require('./routes/user');
 var apiRouter = require('./routes/api');
 
 var app = express();
@@ -19,14 +17,6 @@ var app = express();
 var handlebars = require('express-handlebars').create({
   layoutsDir: path.join(__dirname, "views/layouts"),
   partialsDir: path.join(__dirname, "views/partials"),
-  helpers: {
-    ifObject: function(item, options) {
-      if(typeof item === "object") {
-        return options.fn(this);
-      } else {
-        return options.inverse(this);
-      }
-    }},
   defaultLayout: 'layout',
   extname: 'hbs'
 });
@@ -35,13 +25,22 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
-app.use(express.json());
+app.use(express.json()); // for parsing POST requests
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); // serve static files
+app.use(session({ // for tracking logins
+  secret: 'work hard',
+  resave: true,
+  saveUninitialized: false,
+  store: new MongoStore({
+    url: 'mongodb://localhost:3001/users'
+  })
+}));
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
+app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

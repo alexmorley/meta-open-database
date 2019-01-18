@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> common_head }}
+  </head>
+
+  <div id="header">
+    <div id="left">
+      <form action="/add" method="get">
+        <input type="submit" value="Add New Entry" class="button">
+        </input>
+      </form>
+    </div>
+    <div id="middle"></div>
+    <div id="right">
+      <form action="/user/login" method="get">
+        <input type="submit" value="Login" class="button">
+        </input>
+      </form>
+      <form action="/user/logout" method="get">
+        <input type="submit" value="Logout" class="button">
+        </input>
+      </form>
+      <!--
+        <a onClick="showLogin()">Login</a>
+        <div>
+        </div>
+      -->
+    </div>
+  </div>
+
+
+  <body>
+    {{{body}}}
+  </body>
+</html>
