@@ -1,0 +1,32 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: node
+  commands:
+  - cd app
+  - npm install
+  - npm test
+  - cd ..
+  - cp -R app/* /mnt/
+  volumes:
+    - name: web
+      path: /mnt
+
+- name: deploy
+  image: ubuntu:18.04
+  priviledged: true
+  commands:
+  - echo 0
+  volumes:
+   - name: systemctl
+     path: /bin/systemctl
+
+volumes:
+- name: web
+  host:
+    path: /var/www/meta-open-database
+- name: systemctl
+  host:
+    path: /bin/systemctl
