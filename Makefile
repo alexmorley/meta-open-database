@@ -10,4 +10,7 @@ patch-db:
 pull:
 	git pull
 
-deploy: pull patch-app patch-db
+restart:
+	systemctl restart meta-open-db
+
+deploy: pull patch-app patch-db restart

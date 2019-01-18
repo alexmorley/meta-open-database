@@ -8,3 +8,28 @@ steps:
   - cd app
   - npm install
   - npm test
+
+- name: deploy
+  image: alpine
+  priviledged: true
+  commands:
+  - ls -l /bin/systemctl
+  - exec /bin/systemctl status meta-open-db.service
+  volumes:
+  - name: systemd
+    path: /run/systemd
+  - name: dbus
+    path: /var/run/dbus
+  - name: systemctl
+    path: /bin/systemctl
+
+volumes:
+- name: systemd
+  host:
+    path: /run/systemd
+- name: dbus
+  host:
+    path: /var/run/dbus
+- name: systemctl
+  host:
+    path: /bin/systemctl
