@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var middle = require('../middle.js');
+var common = require('../common.js');
 var jsonminify = require('jsonminify');
 var fs = require('fs');
 
@@ -13,17 +14,20 @@ router.get('/', function(req, res, next) {
 fs.readFile('public/db_schema.json', 'utf8', function (err, data) {
   let fields = JSON.parse(jsonminify(data));
   router.get('/add', middle.requiresLogin, function(req, res, next) {
+    let post_status;
+    if (req.query.success) {
+      post_status = "Entry Successfully Added";
+    } else {
+      post_status = ""
+    }
+    console.log(req.body);
     res.render('add', {
       fields: fields, 
       helpers: {
-        ifObject: function(item, options) {
-          if(!(item.longname)) {
-            return options.fn(this);
-          } else {
-            return options.inverse(this);
-          }
-        }
-      }});
+        ifObject: common.ifObject 
+      },
+      post_status: post_status
+    });
   });
 });
 

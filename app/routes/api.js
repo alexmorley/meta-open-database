@@ -4,6 +4,9 @@ var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 
+// Connection URL
+const MONGO_URL = 'mongodb://127.0.0.1:3001/test';
+
 var API = [
   {
     type: "GET",
@@ -32,16 +35,58 @@ var API = [
     //function(req, res, next) {
     //  res.send("Not Yet Implemented.");
     //}
+  },
+  {
+    type: "POST",
+    endpoint: "insert",
+    params: [],
+    paramsDefault: [],
+    docString: `Insert Entry into Database.`,
+    func: insert
+    //function(req, res, next) {
+    //  res.send("Not Yet Implemented.");
+    //}
   }
 ]
 
+function checkDocument(doc) {
+  if (!(doc.name)) {
+    return Promise.reject(new Error('Needs a name.'))
+  }
+  // need other submit time checks go here (e.g. at least three fields filled in)
+  // Plus sanitise any inputs if need be
+  return Promise.resolve(doc)
+}
+
+function insert(req, res, next) {
+  MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
+    assert.equal(null, err);
+    let collection = db.db().collection('mod');
+    checkDocument(req.body)
+      .then(
+        function resolve(data) {
+          collection.insertOne(req.body)
+        })
+      .then(
+        function resolve(data) {
+          console.log("Success");
+          if (req.body.fromForm) {
+            res.redirect('/add/?success=true');
+          } else {
+            res.sendStatus(200);
+          }
+        })
+      .catch(
+        function reject(err) {
+          console.log("Error");
+          next(err);
+        });
+  });
+}
+
 function dump(req, res, next) {
-  console.log("now");
-  // Connection URL
-  var url = 'mongodb://127.0.0.1:3001/test';
   // Use connect method to connect to the Server
-  MongoClient.connect(url, {useNewUrlParser: true }, function(err, db) {
-    console.log("now");
+  MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
     assert.equal(null, err);
     db.db().collection('mod').find().toArray(function (err,count) {
       if(!(err)){
@@ -55,10 +100,8 @@ function dump(req, res, next) {
 }
 
 function find(req, res, next) {
-  // Connection URL
-  var url = 'mongodb://localhost:3001/test';
   // Use connect method to connect to the Server
-  MongoClient.connect(url, {useNewUrlParser: true }, function(err, db) {
+  MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
     assert.equal(null, err);
     let fields = {name: 1}
     if(req.query.fields) {
@@ -99,7 +142,7 @@ router.get('/', function(req, res, next) {
       ${el.docString}
       </p>`);
   });
-  
+
   res.render('api', {api : html.join('')});
 });
 

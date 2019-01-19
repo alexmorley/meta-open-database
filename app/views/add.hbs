@@ -1,5 +1,6 @@
 <h3> WIP </h3>
-<form id="add" action="/add" method="post">
+<h4> {{post_status}} </h4>
+<form id="add" action="/api/insert" method="post">
   <p><b>{{ reason }}</b></p>
   {{#each fields}}
     {{#ifObject this}}
@@ -12,5 +13,6 @@
       <input id="{{@key}}" type="text" name={{@key}}>
     {{/ifObject}} 
   {{/each}}
+  <input id="fromForm" name="fromForm" type="text" value="true" style="display:none";>
   <input class="button" type="submit" value="Submit">
 </form>
