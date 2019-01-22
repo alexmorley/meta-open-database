@@ -65,7 +65,14 @@ router.get('/login', function (req, res, next) {
   res.render('login', {reason: 'Sign In'});
 });
 
-function checkRegister(body) {
+function checkRegister(req) {
+  if (req.app.get('env') === 'development') {
+    var body = req.body;
+  } else { 
+    return {ok: false,
+      reason: 'Registration not open yet'}
+  }
+
   if (!(body.email &&
     body.password &&
     body.passwordConf)) {
@@ -81,7 +88,7 @@ function checkRegister(body) {
 };
 
 router.post('/register', function (req, res, next) {
-  let check_result = checkRegister(req.body);
+  let check_result = checkRegister(req);
   if (check_result.ok === true) {
     var userData = {
       email: escape(req.body.email),
