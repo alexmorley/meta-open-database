@@ -6,6 +6,7 @@ var session = require('express-session');
 var createError = require('http-errors');
 var cookieParser = require('cookie-parser');
 var MongoStore = require('connect-mongo')(session);
+var mongoSanitize = require('express-mongo-sanitize');
 
 var indexRouter = require('./routes/index');
 var userRouter = require('./routes/user');
@@ -27,6 +28,9 @@ app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(express.json()); // for parsing POST requests
 app.use(express.urlencoded({ extended: false }));
+app.use(mongoSanitize({ // remove mongo special characters from request body
+  replaceWith: '_'
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // serve static files
 app.use(session({ // for tracking logins
