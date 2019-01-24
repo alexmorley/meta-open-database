@@ -17,6 +17,7 @@ tmux send-keys "pushd db && PORT=3001 make start_dev" C-m
 ## kbucket hub pane
 tmux select-pane -t 2
 tmux send-keys "sleep 5 && pushd db && PORT=3001 make import" C-m
+tmux send-keys "sleep 2 && mongo --port=3001" C-m
 
 tmux new-window -t $SESSION:3 -n 'dev'
 tmux select-window -t $SESSION:3
