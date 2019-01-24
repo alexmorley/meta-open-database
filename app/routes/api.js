@@ -32,9 +32,14 @@ var API = [
     paramsDefault: ["{}", "name", "{}"],
     docString: `Query database. See <a href="https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find">MongoDBClient find API</a> for more info.`,
     func: find
-    //function(req, res, next) {
-    //  res.send("Not Yet Implemented.");
-    //}
+  },
+  {
+    type: "GET",
+    endpoint: "search",
+    params: ["term", "field"],
+    paramsDefault: [null, "*"],
+    docString: `Search db for values starting with $term in field $field. `,
+    func: search
   },
   {
     type: "POST",
@@ -43,9 +48,6 @@ var API = [
     paramsDefault: [],
     docString: `Insert Entry into Database.`,
     func: insert
-    //function(req, res, next) {
-    //  res.send("Not Yet Implemented.");
-    //}
   }
 ]
 
@@ -85,7 +87,6 @@ function insert(req, res, next) {
 }
 
 function dump(req, res, next) {
-  // Use connect method to connect to the Server
   MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
     assert.equal(null, err);
     db.db().collection('mod').find().toArray(function (err,count) {
@@ -100,22 +101,41 @@ function dump(req, res, next) {
 }
 
 function find(req, res, next) {
-  // Use connect method to connect to the Server
   MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
     assert.equal(null, err);
     let fields = {name: 1}
     if(req.query.fields) {
       fields = JSON.parse(req.query.fields);
     }
-    db.db().collection('mod').find({}, {fields: fields}).toArray(function (err,count) {
-      if(!(err)){
-        res.send(count)
-      } else {
-        DefaultErrorHandler(err, req, res, next)
-      }
-    });
+    db.db().collection('mod').find(req.query.selector,
+      {fields: fields}).toArray(function (err,count) {
+        if(!(err)){
+          res.send(count)
+        } else {
+          try {
+            DefaultErrorHandler(err, req, res, next)
+          } catch(err) {
+            console.log(err);
+          }
+        }
+      });
     db.close();
   });
+}
+
+function search(req, res, next) {
+  if(!(req.query.term)) {
+    return res.send([]);
+    /*DefaultErrorHandler(new Error("Search term required"),
+      req, res, next);*/
+  }
+  if (!(req.query.field)) {
+    req.query.field = "name";
+  }
+  req.query.selector = {};
+  req.query.selector[req.query.field] = {$regex: `^${req.query.term}`};
+  console.log(req.query.selector);
+  find(req, res, next);
 }
 
 /* Register all endpoints */

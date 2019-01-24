@@ -27,13 +27,38 @@ a {
   display: none;
 }
 
+form {
+  max-width: 250px;
+}
+
 form input {
+  width: 100%;
   border: 0;
   outline 0;
   background: transparent;
   border-bottom: 2px solid black;
   display: block;
   margin-bottom: 5px;
+}
+
+form ul {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+form ul li {
+  border: 1px solid #ddd; 
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; 
+  padding: 3px; 
+  font-size: 10px; 
+  display: block; 
+}
+
+ul li:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
 .button {
