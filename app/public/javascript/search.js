@@ -16,6 +16,20 @@ function search(term, field) {
 function Autocomplete(elem) {
   let container = document.createElement("UL");
   elem.parentNode.insertBefore(container,elem.nextSibling);
+  function populate(entry) {
+    console.log("Populating");
+    console.log(entry);
+    Object.keys(entry).forEach((el,i,arr) => {
+      if (typeof((entry[el])) === "string" ) {
+        let html_el = document.getElementById(el);
+        if (html_el) {
+          html_el.value = entry[el];
+        }
+      } else {
+        populate(entry[el]);
+      }
+    });
+  }
   function update() {
     let current_input = elem.value;
     let field = elem.id;
@@ -24,9 +38,11 @@ function Autocomplete(elem) {
         function resolve(options) {
           container.innerHTML = ""
           options.forEach((el,i,arr) => {
-            console.log(el);
             let entry = `<li> ${el[field]} </li>`;
             container.innerHTML = container.innerHTML + entry;
+            Array.from(container.children).forEach((child_el) => {
+              child_el.addEventListener("click", _ => populate(el));
+            });
           });
         },
         function reject(err) {
@@ -35,7 +51,8 @@ function Autocomplete(elem) {
       );
   }
   return {
-    update
+    update,
+    populate
   }
 }
 

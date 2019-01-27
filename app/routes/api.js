@@ -103,7 +103,7 @@ function dump(req, res, next) {
 function find(req, res, next) {
   MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
     assert.equal(null, err);
-    let fields = {name: 1}
+    let fields = {_id: 0}
     if(req.query.fields) {
       fields = JSON.parse(req.query.fields);
     }
