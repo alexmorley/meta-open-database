@@ -1,4 +1,4 @@
-function search(term, field) {
+function search(term) {
   let request = new Request(`api/search?term=${term}`,
     { method: 'GET',
       headers: {
@@ -13,9 +13,15 @@ function search(term, field) {
     })
 }
 
-function Autocomplete(elem) {
+export function Autocomplete(elem, opts) {
   let container = document.createElement("UL");
   elem.parentNode.insertBefore(container,elem.nextSibling);
+  if (opts.onclick == "populate") {
+    onclick = populate;
+  } else if (opts.onclick == "goto") {
+    onclick = goto_entry;
+  }
+
   function populate(entry) {
     console.log("Populating");
     console.log(entry);
@@ -30,10 +36,15 @@ function Autocomplete(elem) {
       }
     });
   }
+
+  function goto_entry(entry) {
+    console.log(entry);
+  }
+
   function update() {
     let current_input = elem.value;
-    let field = elem.id;
-    let options = search(current_input, field)
+    let field = "name"; //elem.id;
+    let options = search(current_input)
       .then(
         function resolve(options) {
           container.innerHTML = ""
@@ -41,7 +52,7 @@ function Autocomplete(elem) {
             let entry = `<li> ${el[field]} </li>`;
             container.innerHTML = container.innerHTML + entry;
             Array.from(container.children).forEach((child_el) => {
-              child_el.addEventListener("click", _ => populate(el));
+              child_el.addEventListener("click", _ => onclick(el));
             });
           });
         },
@@ -52,10 +63,6 @@ function Autocomplete(elem) {
   }
   return {
     update,
-    populate
+    onclick
   }
 }
-
-let input_el = document.getElementById("name");
-let input_auto = Autocomplete(input_el);
-input_el.addEventListener("keyup",input_auto.update);
