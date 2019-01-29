@@ -9,6 +9,7 @@ var MongoStore = require('connect-mongo')(session);
 var mongoSanitize = require('express-mongo-sanitize');
 
 var indexRouter = require('./routes/index');
+var entryRouter = require('./routes/entry');
 var userRouter = require('./routes/user');
 var apiRouter = require('./routes/api');
 
@@ -45,6 +46,7 @@ app.use(session({ // for tracking logins
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
 app.use('/user', userRouter);
+app.use('/entry', entryRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
