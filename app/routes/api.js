@@ -14,14 +14,14 @@ var API = [
     params: [],
     paramsDefault: [],
     docString: "Dump database as JSON Array.",
-    func: dump
+    handler: dump
   },{
     type: "GET",
     endpoint: "list",
     params: ["field"],
     paramsDefault: ["name"],
     docString: "List the names of all software entries",
-    func: function(req, res, next) {
+    handler: function(req, res, next) {
       res.send("Not Yet Implemented.");
     }
   },
@@ -31,7 +31,8 @@ var API = [
     params: ["selector", "fields", "options"],
     paramsDefault: ["{}", "name", "{}"],
     docString: `Query database. See <a href="https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find">MongoDBClient find API</a> for more info.`,
-    func: find
+    handler: find_handler,
+    func: find,
   },
   {
     type: "GET",
@@ -39,6 +40,7 @@ var API = [
     params: ["term", "field"],
     paramsDefault: [null, "*"],
     docString: `Search db for values starting with $term in field $field. `,
+    handler: search_handler,
     func: search
   },
   {
@@ -47,7 +49,7 @@ var API = [
     params: [],
     paramsDefault: [],
     docString: `Insert Entry into Database.`,
-    func: insert
+    handler: insert
   }
 ]
 
@@ -100,30 +102,52 @@ function dump(req, res, next) {
   });
 }
 
-function find(req, res, next) {
-  MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
-    assert.equal(null, err);
-    let fields = {_id: 0}
-    if(req.query.fields) {
-      fields = JSON.parse(req.query.fields);
-    }
-    db.db().collection('mod').find(req.query.selector,
-      {fields: fields}).toArray(function (err,count) {
-        if(!(err)){
-          res.send(count)
-        } else {
-          try {
-            DefaultErrorHandler(err, req, res, next)
-          } catch(err) {
-            console.log(err);
+function find(fields, selector) {
+  return new Promise(function(resolve, reject) {
+    MongoClient.connect(MONGO_URL, {useNewUrlParser: true }, function(err, db) {
+      if(err) { reject(err); }
+      let fields;
+      if(fields) {
+        fields = JSON.parse(fields);
+      } else {
+        fields = {_id: 0};
+      }
+      db.db().collection('mod').find(selector,
+        {fields: fields}).toArray(function (err,count) {
+          if(!(err)){
+            resolve(count)
+          } else {
+            try {
+              reject(err);
+            } catch(err) {
+              console.log(err);
+            }
           }
-        }
-      });
-    db.close();
-  });
+        });
+      db.close();
+    });
+  })
 }
 
-function search(req, res, next) {
+function find_handler(req, res, next) {
+  find(req.query.fields, req.query.selector)
+    .then(
+      function resolve(count) {
+      res.send(count);
+    },
+      function reject(err) {
+        DefaultErrorHandler(err, req, res, next);
+      }
+    );
+}
+
+function search(term) {
+  let field = "name";
+  let selector = {name: {$regex: `^${term}`}};
+  return find(field, selector)
+}
+
+function search_handler(req, res, next) {
   if(!(req.query.term)) {
     return res.send([]);
     /*DefaultErrorHandler(new Error("Search term required"),
@@ -135,12 +159,12 @@ function search(req, res, next) {
   req.query.selector = {};
   req.query.selector[req.query.field] = {$regex: `^${req.query.term}`};
   console.log(req.query.selector);
-  find(req, res, next);
+  find_handler(req, res, next);
 }
 
 /* Register all endpoints */
 API.forEach(function (el,i) {
-  router[el.type.toLowerCase()](`/${el.endpoint}`, el.func);
+  router[el.type.toLowerCase()](`/${el.endpoint}`, el.handler);
 });
 
 /* Show API documentation when no endpoint given */
@@ -175,4 +199,5 @@ function DefaultErrorHandler(err, req, res, next) {
   res.render('error', { error: err })
 }
 
-module.exports = router;
+module.exports.router = router;
+module.exports.API = API;

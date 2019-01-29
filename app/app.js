@@ -11,7 +11,7 @@ var mongoSanitize = require('express-mongo-sanitize');
 var indexRouter = require('./routes/index');
 var entryRouter = require('./routes/entry');
 var userRouter = require('./routes/user');
-var apiRouter = require('./routes/api');
+var apiRouter = require('./routes/api').router;
 
 var app = express();
 
