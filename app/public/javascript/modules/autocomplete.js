@@ -1,5 +1,5 @@
 function search(term) {
-  let request = new Request(`api/search?term=${term}`,
+  let request = new Request(window.location.origin+`/api/search?term=${term}`,
     { method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ export function Autocomplete(elem, opts) {
           }
         },
         function reject(err) {
-          container.innerHTML = err//"Server Error";
+          console.log(err);//"Server Error";
         }
       );
   }
