@@ -1,5 +1,11 @@
-function search(term) {
-  let request = new Request(window.location.origin+`/api/search?term=${term}`,
+function search(term, opts) {
+  let url
+  if (!(opts.url)) {
+    url = window.location.origin;
+  } else {
+    url = opts.url;
+  }
+  let request = new Request(url+`/api/search?term=${term}`,
     { method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -16,22 +22,24 @@ function search(term) {
 
 export function Autocomplete(elem, opts) {
   let container = document.createElement("UL");
+  container.id = "dropdown";
   elem.parentNode.insertBefore(container,elem.nextSibling);
 
   function update() {
     let current_input = elem.value;
-    let field = "name"; //elem.id;
-    let options = search(current_input)
+    let field = "name";
+    let options = search(current_input, opts)
       .then(
         function resolve(options) {
-          container.innerHTML = ""
+          container.innerHTML = "";
           if (options.length > 0) {
             options.forEach((el,i,arr) => {
               let entry = `<li> ${el[field]} </li>`;
               container.innerHTML = container.innerHTML + entry;
-              Array.from(container.children).forEach((child_el) => {
-                child_el.addEventListener("click", _ => opts.onclick(el));
-              });
+            });
+            Array.from(container.children).forEach((child_el,i) => {
+              let el = options[i];
+              child_el.addEventListener("click", _ => opts.onclick(el));
             });
           }
         },
