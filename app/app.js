@@ -1,3 +1,4 @@
+var cors = require('cors');
 var path = require('path');
 var logger = require('morgan');
 var express = require('express');
@@ -26,6 +27,7 @@ app.engine('hbs', handlebars.engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json()); // for parsing POST requests
 app.use(express.urlencoded({ extended: false }));

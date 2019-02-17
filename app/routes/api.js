@@ -157,6 +157,7 @@ function search_handler(req, res, next) {
     req.query.field = "name";
   }
   req.query.selector = {};
+  // TODO: Should be case insensitive.
   req.query.selector[req.query.field] = {$regex: `^${req.query.term}`};
   console.log(req.query.selector);
   find_handler(req, res, next);
