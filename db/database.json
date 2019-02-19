@@ -8176,11 +8176,6 @@
 			"name_id": "otrs"
 		},
 		{
-			"longname": "HelpCrunch",
-			"link": "https://alternativeto.net/software/helpcrunch/",
-			"name_id": "helpcrunch"
-		},
-		{
 			"longname": "UseResponse",
 			"link": "https://alternativeto.net/software/useresponse/",
 			"name_id": "useresponse"
@@ -8219,6 +8214,11 @@
 			"longname": "OpenSupports",
 			"link": "https://alternativeto.net/software/opensupports/",
 			"name_id": "opensupports"
+		},
+		{
+			"longname": "HelpCrunch",
+			"link": "https://alternativeto.net/software/helpcrunch/",
+			"name_id": "helpcrunch"
 		},
 		{
 			"longname": "Kayako",
@@ -9906,14 +9906,14 @@
 			"name_id": "useresponse"
 		},
 		{
-			"longname": "UserVoice",
-			"link": "https://alternativeto.net/software/uservoice/",
-			"name_id": "uservoice"
-		},
-		{
 			"longname": "Zammad",
 			"link": "https://alternativeto.net/software/zammad/",
 			"name_id": "zammad"
+		},
+		{
+			"longname": "UserVoice",
+			"link": "https://alternativeto.net/software/uservoice/",
+			"name_id": "uservoice"
 		},
 		{
 			"longname": "HESK",
@@ -9929,11 +9929,6 @@
 			"longname": "InvGate Service Desk",
 			"link": "https://alternativeto.net/software/invgate-service-desk/",
 			"name_id": "invgate-service-desk"
-		},
-		{
-			"longname": "HelpCrunch",
-			"link": "https://alternativeto.net/software/helpcrunch/",
-			"name_id": "helpcrunch"
 		},
 		{
 			"longname": "JitBit Helpdesk",
@@ -9959,6 +9954,11 @@
 			"longname": "Get Satisfaction",
 			"link": "https://alternativeto.net/software/get-satisfaction/",
 			"name_id": "get-satisfaction"
+		},
+		{
+			"longname": "Enchant",
+			"link": "https://alternativeto.net/software/enchant-com/",
+			"name_id": "enchant-com"
 		}
 	]
 },
@@ -10239,6 +10239,2865 @@
 			"longname": "Syncplicity",
 			"link": "https://alternativeto.net/software/syncplicity/",
 			"name_id": "syncplicity"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c113a40ce43bdc279a8be"
+	},
+	"name": "Google Drive - Sheets",
+	"data": {
+		"supportedPlatforms": [
+			"Web",
+			"Android",
+			"iPhone",
+			"Chrome OS",
+			"Android Tablet",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "Google"
+	},
+	"related-to": [
+		{
+			"longname": "LibreOffice - Calc",
+			"link": "https://alternativeto.net/software/libreoffice---calc/",
+			"name_id": "libreoffice---calc"
+		},
+		{
+			"longname": "Microsoft Office Excel",
+			"link": "https://alternativeto.net/software/microsoft-excel/",
+			"name_id": "microsoft-excel"
+		},
+		{
+			"longname": "Airtable",
+			"link": "https://alternativeto.net/software/airtable/",
+			"name_id": "airtable"
+		},
+		{
+			"longname": "Cryptpad",
+			"link": "https://alternativeto.net/software/cryptpad/",
+			"name_id": "cryptpad"
+		},
+		{
+			"longname": "EtherCalc",
+			"link": "https://alternativeto.net/software/ethercalc/",
+			"name_id": "ethercalc"
+		},
+		{
+			"longname": "Gnumeric",
+			"link": "https://alternativeto.net/software/gnumeric/",
+			"name_id": "gnumeric"
+		},
+		{
+			"longname": "Numbers",
+			"link": "https://alternativeto.net/software/numbers/",
+			"name_id": "numbers"
+		},
+		{
+			"longname": "Apache OpenOffice Calc",
+			"link": "https://alternativeto.net/software/open-office---calc/",
+			"name_id": "open-office---calc"
+		},
+		{
+			"longname": "NeoOffice",
+			"link": "https://alternativeto.net/software/neooffice/",
+			"name_id": "neooffice"
+		},
+		{
+			"longname": "Obvibase",
+			"link": "https://alternativeto.net/software/obvibase/",
+			"name_id": "obvibase"
+		},
+		{
+			"longname": "Spread32",
+			"link": "https://alternativeto.net/software/spread32/",
+			"name_id": "spread32"
+		},
+		{
+			"longname": "Zoho Sheet",
+			"link": "https://alternativeto.net/software/zoho-sheet/",
+			"name_id": "zoho-sheet"
+		},
+		{
+			"longname": "Kingsoft Spreadsheets",
+			"link": "https://alternativeto.net/software/kingsoft-spreadsheets-free-2012/",
+			"name_id": "kingsoft-spreadsheets-free-2012"
+		},
+		{
+			"longname": "TableEdit",
+			"link": "https://alternativeto.net/software/tableedit/",
+			"name_id": "tableedit"
+		},
+		{
+			"longname": "Ragic",
+			"link": "https://alternativeto.net/software/ragic/",
+			"name_id": "ragic"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c113d40ce43bdc279a8dd"
+	},
+	"name": "Airtable",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Web",
+			"Android",
+			"iPhone",
+			"Android Tablet",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "Formagrid"
+	},
+	"related-to": [
+		{
+			"longname": "Google Drive - Sheets",
+			"link": "https://alternativeto.net/software/google-sheets/",
+			"name_id": "google-sheets"
+		},
+		{
+			"longname": "OmniFocus",
+			"link": "https://alternativeto.net/software/omnifocus/",
+			"name_id": "omnifocus"
+		},
+		{
+			"longname": "Zenkit",
+			"link": "https://alternativeto.net/software/zenkit/",
+			"name_id": "zenkit"
+		},
+		{
+			"longname": "Smartsheet",
+			"link": "https://alternativeto.net/software/smartsheet/",
+			"name_id": "smartsheet"
+		},
+		{
+			"longname": "Memento",
+			"link": "https://alternativeto.net/software/memento/",
+			"name_id": "memento"
+		},
+		{
+			"longname": "FileMaker Pro Advanced",
+			"link": "https://alternativeto.net/software/filemaker-pro/",
+			"name_id": "filemaker-pro"
+		},
+		{
+			"longname": "Zoho Creator",
+			"link": "https://alternativeto.net/software/zoho-creator/",
+			"name_id": "zoho-creator"
+		},
+		{
+			"longname": "Matrify",
+			"link": "https://alternativeto.net/software/matrify/",
+			"name_id": "matrify"
+		},
+		{
+			"longname": "Ora",
+			"link": "https://alternativeto.net/software/ora/",
+			"name_id": "ora"
+		},
+		{
+			"longname": "Lackid",
+			"link": "https://alternativeto.net/software/lackid/",
+			"name_id": "lackid"
+		},
+		{
+			"longname": "QuintaDB",
+			"link": "https://alternativeto.net/software/quintadb/",
+			"name_id": "quintadb"
+		},
+		{
+			"longname": "Ragic",
+			"link": "https://alternativeto.net/software/ragic/",
+			"name_id": "ragic"
+		},
+		{
+			"longname": "Cercle",
+			"link": "https://alternativeto.net/software/cercle-crm/",
+			"name_id": "cercle-crm"
+		},
+		{
+			"longname": "RestDB.io",
+			"link": "https://alternativeto.net/software/restdb-io/",
+			"name_id": "restdb-io"
+		},
+		{
+			"longname": "Obvibase",
+			"link": "https://alternativeto.net/software/obvibase/",
+			"name_id": "obvibase"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a8fa"
+	},
+	"name": "GNU Octave",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "The Octave Project"
+	},
+	"related-to": [
+		{
+			"longname": "Wolfram Alpha",
+			"link": "https://alternativeto.net/software/wolfram-alpha/",
+			"name_id": "wolfram-alpha"
+		},
+		{
+			"longname": "MATLAB",
+			"link": "https://alternativeto.net/software/matlab/",
+			"name_id": "matlab"
+		},
+		{
+			"longname": "R (programming language)",
+			"link": "https://alternativeto.net/software/r-project/",
+			"name_id": "r-project"
+		},
+		{
+			"longname": "Sage",
+			"link": "https://alternativeto.net/software/sage/",
+			"name_id": "sage"
+		},
+		{
+			"longname": "Mathematica",
+			"link": "https://alternativeto.net/software/mathematica/",
+			"name_id": "mathematica"
+		},
+		{
+			"longname": "Jupyter",
+			"link": "https://alternativeto.net/software/jupyter/",
+			"name_id": "jupyter"
+		},
+		{
+			"longname": "Scilab",
+			"link": "https://alternativeto.net/software/scilab/",
+			"name_id": "scilab"
+		},
+		{
+			"longname": "fxSolver",
+			"link": "https://alternativeto.net/software/fxsolver/",
+			"name_id": "fxsolver"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Spyder",
+			"link": "https://alternativeto.net/software/spyder/",
+			"name_id": "spyder"
+		},
+		{
+			"longname": "wxMaxima",
+			"link": "https://alternativeto.net/software/wxmaxima/",
+			"name_id": "wxmaxima"
+		},
+		{
+			"longname": "python(x,y)",
+			"link": "https://alternativeto.net/software/pythonxy/",
+			"name_id": "pythonxy"
+		},
+		{
+			"longname": "Xcos",
+			"link": "https://alternativeto.net/software/scilab-xcos/",
+			"name_id": "scilab-xcos"
+		},
+		{
+			"longname": "Freemat",
+			"link": "https://alternativeto.net/software/freemat/",
+			"name_id": "freemat"
+		},
+		{
+			"longname": "MathStudio",
+			"link": "https://alternativeto.net/software/mathstudio/",
+			"name_id": "mathstudio"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a904"
+	},
+	"name": "Lua",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"Android",
+			"iPhone",
+			"Android Tablet",
+			"BSD",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "Lua"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "JavaScript",
+			"link": "https://alternativeto.net/software/javascript/",
+			"name_id": "javascript"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		}
+	],
+	"website": "https://www.lua.org/"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a906"
+	},
+	"name": "Go (Programming Language)",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Google"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Haxe",
+			"link": "https://alternativeto.net/software/haxe/",
+			"name_id": "haxe"
+		}
+	],
+	"website": "http://golang.org/"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a909"
+	},
+	"name": "ASP.NET",
+	"data": {
+		"supportedPlatforms": [
+			"Windows"
+		]
+	},
+	"development": {
+		"developedBy": "Microsoft"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "Node.js",
+			"link": "https://alternativeto.net/software/node-js/",
+			"name_id": "node-js"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Haxe",
+			"link": "https://alternativeto.net/software/haxe/",
+			"name_id": "haxe"
+		},
+		{
+			"longname": "Tcl",
+			"link": "https://alternativeto.net/software/tcl/",
+			"name_id": "tcl"
+		},
+		{
+			"longname": "Erlang",
+			"link": "https://alternativeto.net/software/erlang/",
+			"name_id": "erlang"
+		},
+		{
+			"longname": "LiveScript",
+			"link": "https://alternativeto.net/software/livescript/",
+			"name_id": "livescript"
+		},
+		{
+			"longname": "Crystal (programming language)",
+			"link": "https://alternativeto.net/software/crystal-programming-language/",
+			"name_id": "crystal-programming-language"
+		},
+		{
+			"longname": "Elixir",
+			"link": "https://alternativeto.net/software/elixir/about/",
+			"name_id": "about"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a90c"
+	},
+	"name": "PHP",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD",
+			"PHP"
+		]
+	},
+	"development": {
+		"developedBy": "The PHP Group"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "JavaScript",
+			"link": "https://alternativeto.net/software/javascript/",
+			"name_id": "javascript"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Haxe",
+			"link": "https://alternativeto.net/software/haxe/",
+			"name_id": "haxe"
+		},
+		{
+			"longname": "ASP.NET",
+			"link": "https://alternativeto.net/software/asp-net/",
+			"name_id": "asp-net"
+		},
+		{
+			"longname": "Tcl",
+			"link": "https://alternativeto.net/software/tcl/",
+			"name_id": "tcl"
+		},
+		{
+			"longname": "Erlang",
+			"link": "https://alternativeto.net/software/erlang/",
+			"name_id": "erlang"
+		},
+		{
+			"longname": "Hack",
+			"link": "https://alternativeto.net/software/hack/",
+			"name_id": "hack"
+		},
+		{
+			"longname": "LiveScript",
+			"link": "https://alternativeto.net/software/livescript/",
+			"name_id": "livescript"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a90e"
+	},
+	"name": "Microsoft Office Excel",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Android",
+			"iPhone",
+			"Windows S",
+			"Android Tablet",
+			"Windows Phone",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "Microsoft"
+	},
+	"related-to": [
+		{
+			"longname": "LibreOffice - Calc",
+			"link": "https://alternativeto.net/software/libreoffice---calc/",
+			"name_id": "libreoffice---calc"
+		},
+		{
+			"longname": "ONLYOFFICE",
+			"link": "https://alternativeto.net/software/onlyoffice/",
+			"name_id": "onlyoffice"
+		},
+		{
+			"longname": "Google Drive - Sheets",
+			"link": "https://alternativeto.net/software/google-sheets/",
+			"name_id": "google-sheets"
+		},
+		{
+			"longname": "Gnumeric",
+			"link": "https://alternativeto.net/software/gnumeric/",
+			"name_id": "gnumeric"
+		},
+		{
+			"longname": "EtherCalc",
+			"link": "https://alternativeto.net/software/ethercalc/",
+			"name_id": "ethercalc"
+		},
+		{
+			"longname": "Apache OpenOffice Calc",
+			"link": "https://alternativeto.net/software/open-office---calc/",
+			"name_id": "open-office---calc"
+		},
+		{
+			"longname": "Tableau",
+			"link": "https://alternativeto.net/software/tableau/",
+			"name_id": "tableau"
+		},
+		{
+			"longname": "Numbers",
+			"link": "https://alternativeto.net/software/numbers/",
+			"name_id": "numbers"
+		},
+		{
+			"longname": "PlanMaker",
+			"link": "https://alternativeto.net/software/planmaker/",
+			"name_id": "planmaker"
+		},
+		{
+			"longname": "fxSolver",
+			"link": "https://alternativeto.net/software/fxsolver/",
+			"name_id": "fxsolver"
+		},
+		{
+			"longname": "Kingsoft Spreadsheets",
+			"link": "https://alternativeto.net/software/kingsoft-spreadsheets-free-2012/",
+			"name_id": "kingsoft-spreadsheets-free-2012"
+		},
+		{
+			"longname": "NeoOffice",
+			"link": "https://alternativeto.net/software/neooffice/",
+			"name_id": "neooffice"
+		},
+		{
+			"longname": "Spread32",
+			"link": "https://alternativeto.net/software/spread32/",
+			"name_id": "spread32"
+		},
+		{
+			"longname": "Matrify",
+			"link": "https://alternativeto.net/software/matrify/",
+			"name_id": "matrify"
+		},
+		{
+			"longname": "Zoho Sheet",
+			"link": "https://alternativeto.net/software/zoho-sheet/",
+			"name_id": "zoho-sheet"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a910"
+	},
+	"name": "Python",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"S60",
+			"BSD",
+			"AROS",
+			"Haiku",
+			"AmigaOS"
+		]
+	},
+	"development": {
+		"developedBy": "Python Software Foundation"
+	},
+	"related-to": [
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "R (programming language)",
+			"link": "https://alternativeto.net/software/r-project/",
+			"name_id": "r-project"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		}
+	],
+	"website": "http://www.python.org/"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a918"
+	},
+	"name": "C#",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Microsoft"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		}
+	],
+	"website": "https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a91d"
+	},
+	"name": "Java",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"Web",
+			"Android",
+			"Java Mobile",
+			"S60",
+			"HP webOS"
+		]
+	},
+	"development": {
+		"developedBy": "Oracle"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "JavaScript",
+			"link": "https://alternativeto.net/software/javascript/",
+			"name_id": "javascript"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "OpenJDK",
+			"link": "https://alternativeto.net/software/openjdk/",
+			"name_id": "openjdk"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		}
+	],
+	"website": "http://www.oracle.com/technetwork/java/index.html"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a922"
+	},
+	"name": "fxSolver",
+	"data": {
+		"supportedPlatforms": [
+			"Web"
+		]
+	},
+	"development": {
+		"developedBy": "Equanalysis UG"
+	},
+	"related-to": [
+		{
+			"longname": "Wolfram Alpha",
+			"link": "https://alternativeto.net/software/wolfram-alpha/",
+			"name_id": "wolfram-alpha"
+		},
+		{
+			"longname": "Microsoft Office Excel",
+			"link": "https://alternativeto.net/software/microsoft-excel/",
+			"name_id": "microsoft-excel"
+		},
+		{
+			"longname": "SpeedCrunch",
+			"link": "https://alternativeto.net/software/speedcrunch/",
+			"name_id": "speedcrunch"
+		},
+		{
+			"longname": "GNU Octave",
+			"link": "https://alternativeto.net/software/gnu-octave/",
+			"name_id": "gnu-octave"
+		},
+		{
+			"longname": "MATLAB",
+			"link": "https://alternativeto.net/software/matlab/",
+			"name_id": "matlab"
+		},
+		{
+			"longname": "GeoGebra",
+			"link": "https://alternativeto.net/software/geogebra/",
+			"name_id": "geogebra"
+		},
+		{
+			"longname": "Sage",
+			"link": "https://alternativeto.net/software/sage/",
+			"name_id": "sage"
+		},
+		{
+			"longname": "Mathematica",
+			"link": "https://alternativeto.net/software/mathematica/",
+			"name_id": "mathematica"
+		},
+		{
+			"longname": "LibreOffice - Math",
+			"link": "https://alternativeto.net/software/libreoffice-math/",
+			"name_id": "libreoffice-math"
+		},
+		{
+			"longname": "SciPy \u0026 Numpy",
+			"link": "https://alternativeto.net/software/scipy--numpy/",
+			"name_id": "scipy--numpy"
+		},
+		{
+			"longname": "Scilab",
+			"link": "https://alternativeto.net/software/scilab/",
+			"name_id": "scilab"
+		},
+		{
+			"longname": "Maxima",
+			"link": "https://alternativeto.net/software/maxima/",
+			"name_id": "maxima"
+		},
+		{
+			"longname": "Spyder",
+			"link": "https://alternativeto.net/software/spyder/",
+			"name_id": "spyder"
+		},
+		{
+			"longname": "wxMaxima",
+			"link": "https://alternativeto.net/software/wxmaxima/",
+			"name_id": "wxmaxima"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a925"
+	},
+	"name": "Perl",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD",
+			"Haiku"
+		]
+	},
+	"development": {
+		"developedBy": "Larry Wall"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "JavaScript",
+			"link": "https://alternativeto.net/software/javascript/",
+			"name_id": "javascript"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "Node.js",
+			"link": "https://alternativeto.net/software/node-js/",
+			"name_id": "node-js"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a929"
+	},
+	"name": "LibreOffice - Calc",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD",
+			"PortableApps.com",
+			"ReactOS"
+		]
+	},
+	"development": {
+		"developedBy": "The Document Foundation"
+	},
+	"related-to": [
+		{
+			"longname": "Microsoft Office Excel",
+			"link": "https://alternativeto.net/software/microsoft-excel/",
+			"name_id": "microsoft-excel"
+		},
+		{
+			"longname": "Google Drive - Sheets",
+			"link": "https://alternativeto.net/software/google-sheets/",
+			"name_id": "google-sheets"
+		},
+		{
+			"longname": "Gnumeric",
+			"link": "https://alternativeto.net/software/gnumeric/",
+			"name_id": "gnumeric"
+		},
+		{
+			"longname": "EtherCalc",
+			"link": "https://alternativeto.net/software/ethercalc/",
+			"name_id": "ethercalc"
+		},
+		{
+			"longname": "Apache OpenOffice Calc",
+			"link": "https://alternativeto.net/software/open-office---calc/",
+			"name_id": "open-office---calc"
+		},
+		{
+			"longname": "Numbers",
+			"link": "https://alternativeto.net/software/numbers/",
+			"name_id": "numbers"
+		},
+		{
+			"longname": "PlanMaker",
+			"link": "https://alternativeto.net/software/planmaker/",
+			"name_id": "planmaker"
+		},
+		{
+			"longname": "Spread32",
+			"link": "https://alternativeto.net/software/spread32/",
+			"name_id": "spread32"
+		},
+		{
+			"longname": "Kingsoft Spreadsheets",
+			"link": "https://alternativeto.net/software/kingsoft-spreadsheets-free-2012/",
+			"name_id": "kingsoft-spreadsheets-free-2012"
+		},
+		{
+			"longname": "Zoho Sheet",
+			"link": "https://alternativeto.net/software/zoho-sheet/",
+			"name_id": "zoho-sheet"
+		},
+		{
+			"longname": "TableEdit",
+			"link": "https://alternativeto.net/software/tableedit/",
+			"name_id": "tableedit"
+		},
+		{
+			"longname": "Socialcalc",
+			"link": "https://alternativeto.net/software/socialcalc/",
+			"name_id": "socialcalc"
+		},
+		{
+			"longname": "Microsoft Excel Viewer",
+			"link": "https://alternativeto.net/software/excel-viewer/",
+			"name_id": "excel-viewer"
+		},
+		{
+			"longname": "ANKHOR FlowSheet",
+			"link": "https://alternativeto.net/software/ankhor-flowsheet/",
+			"name_id": "ankhor-flowsheet"
+		},
+		{
+			"longname": "dhtmlxSpreadsheet",
+			"link": "https://alternativeto.net/software/dhtmlxspreadsheet/",
+			"name_id": "dhtmlxspreadsheet"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a930"
+	},
+	"name": "Node.js",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD",
+			"Self-Hosted"
+		]
+	},
+	"development": {
+		"developedBy": "Joyent, Inc."
+	},
+	"related-to": [
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "ASP.NET",
+			"link": "https://alternativeto.net/software/asp-net/",
+			"name_id": "asp-net"
+		},
+		{
+			"longname": "Elixir",
+			"link": "https://alternativeto.net/software/elixir/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Crystal (programming language)",
+			"link": "https://alternativeto.net/software/crystal-programming-language/",
+			"name_id": "crystal-programming-language"
+		},
+		{
+			"longname": "Ceylon",
+			"link": "https://alternativeto.net/software/ceylon/",
+			"name_id": "ceylon"
+		},
+		{
+			"longname": "REBOL",
+			"link": "https://alternativeto.net/software/rebol/",
+			"name_id": "rebol"
+		},
+		{
+			"longname": "Hack",
+			"link": "https://alternativeto.net/software/hack/",
+			"name_id": "hack"
+		},
+		{
+			"longname": "Pyramid",
+			"link": "https://alternativeto.net/software/pyramid/",
+			"name_id": "pyramid"
+		},
+		{
+			"longname": "XStart",
+			"link": "https://alternativeto.net/software/xstart/",
+			"name_id": "xstart"
+		},
+		{
+			"longname": "Solid",
+			"link": "https://alternativeto.net/software/solid/",
+			"name_id": "solid"
+		},
+		{
+			"longname": "thinBasic",
+			"link": "https://alternativeto.net/software/thinbasic/",
+			"name_id": "thinbasic"
+		},
+		{
+			"longname": "Jabaco",
+			"link": "https://alternativeto.net/software/jabaco/",
+			"name_id": "jabaco"
+		},
+		{
+			"longname": "Script#",
+			"link": "https://alternativeto.net/software/script-/",
+			"name_id": "script-"
+		},
+		{
+			"longname": "ViUR.is",
+			"link": "https://alternativeto.net/software/viur-is/",
+			"name_id": "viur-is"
+		},
+		{
+			"longname": "Willer Framework",
+			"link": "https://alternativeto.net/software/willer-framework/",
+			"name_id": "willer-framework"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a939"
+	},
+	"name": "JavaScript",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"Web",
+			"Android",
+			"iPhone",
+			"Chrome OS",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Brendan Eich, Netscape \u0026 Mozilla Foundation"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "CoffeeScript",
+			"link": "https://alternativeto.net/software/coffeescript/",
+			"name_id": "coffeescript"
+		},
+		{
+			"longname": "Typescript",
+			"link": "https://alternativeto.net/software/typescript/",
+			"name_id": "typescript"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		},
+		{
+			"longname": "jRuby",
+			"link": "https://alternativeto.net/software/jruby/",
+			"name_id": "jruby"
+		},
+		{
+			"longname": "Kotlin",
+			"link": "https://alternativeto.net/software/kotlin/",
+			"name_id": "kotlin"
+		},
+		{
+			"longname": "Jython",
+			"link": "https://alternativeto.net/software/jython/",
+			"name_id": "jython"
+		},
+		{
+			"longname": "Objective-C",
+			"link": "https://alternativeto.net/software/objective-c/",
+			"name_id": "objective-c"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a93b"
+	},
+	"name": "Rust",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Mozilla"
+	},
+	"related-to": [
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Haxe",
+			"link": "https://alternativeto.net/software/haxe/",
+			"name_id": "haxe"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		},
+		{
+			"longname": "Objective-C",
+			"link": "https://alternativeto.net/software/objective-c/",
+			"name_id": "objective-c"
+		},
+		{
+			"longname": "F# (programming language)",
+			"link": "https://alternativeto.net/software/f--programming-language-/",
+			"name_id": "f--programming-language-"
+		},
+		{
+			"longname": "Clojure",
+			"link": "https://alternativeto.net/software/clojure/",
+			"name_id": "clojure"
+		}
+	],
+	"website": "https://www.rust-lang.org/"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a93d"
+	},
+	"name": "Ruby",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD",
+			"Haiku"
+		]
+	},
+	"development": {
+		"developedBy": "Yukihiro Matsumoto, et al."
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "JavaScript",
+			"link": "https://alternativeto.net/software/javascript/",
+			"name_id": "javascript"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "ASP.NET",
+			"link": "https://alternativeto.net/software/asp-net/",
+			"name_id": "asp-net"
+		}
+	],
+	"website": "http://www.ruby-lang.org/"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a941"
+	},
+	"name": "C (programming language)",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"Android",
+			"iPhone",
+			"Android Tablet",
+			"BSD",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "Dennis Ritchie \u0026 Bell Labs"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		}
+	],
+	"website": "http://open-std.org/jtc1/sc22/wg14"
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a944"
+	},
+	"name": "Wekan",
+	"data": {
+		"supportedPlatforms": [
+			"Web",
+			"Self-Hosted",
+			"Sandstorm.io",
+			"Cloudron"
+		]
+	},
+	"development": {
+		"developedBy": "Maxime Quandalle"
+	},
+	"related-to": [
+		{
+			"longname": "Trello",
+			"link": "https://alternativeto.net/software/trello/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Wunderlist",
+			"link": "https://alternativeto.net/software/wunderlist/",
+			"name_id": "wunderlist"
+		},
+		{
+			"longname": "Taiga.io",
+			"link": "https://alternativeto.net/software/taiga-io/",
+			"name_id": "taiga-io"
+		},
+		{
+			"longname": "Kanboard",
+			"link": "https://alternativeto.net/software/kanboard/",
+			"name_id": "kanboard"
+		},
+		{
+			"longname": "JIRA",
+			"link": "https://alternativeto.net/software/jira/",
+			"name_id": "jira"
+		},
+		{
+			"longname": "Quire",
+			"link": "https://alternativeto.net/software/quire/",
+			"name_id": "quire"
+		},
+		{
+			"longname": "Remember The Milk",
+			"link": "https://alternativeto.net/software/remember-the-milk/",
+			"name_id": "remember-the-milk"
+		},
+		{
+			"longname": "TickTick",
+			"link": "https://alternativeto.net/software/ticktick/",
+			"name_id": "ticktick"
+		},
+		{
+			"longname": "Taskade",
+			"link": "https://alternativeto.net/software/taskade/",
+			"name_id": "taskade"
+		},
+		{
+			"longname": "Task Coach",
+			"link": "https://alternativeto.net/software/task-coach/",
+			"name_id": "task-coach"
+		},
+		{
+			"longname": "Toodledo",
+			"link": "https://alternativeto.net/software/toodledo/",
+			"name_id": "toodledo"
+		},
+		{
+			"longname": "Any.do",
+			"link": "https://alternativeto.net/software/any-do/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Todo.txt",
+			"link": "https://alternativeto.net/software/todotxt/",
+			"name_id": "todotxt"
+		},
+		{
+			"longname": "fluxday",
+			"link": "https://alternativeto.net/software/fluxday/",
+			"name_id": "fluxday"
+		},
+		{
+			"longname": "Zenkit",
+			"link": "https://alternativeto.net/software/zenkit/",
+			"name_id": "zenkit"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a946"
+	},
+	"name": "R (programming language)",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Ross Ihaka and Robert Gentleman"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "GNU Octave",
+			"link": "https://alternativeto.net/software/gnu-octave/",
+			"name_id": "gnu-octave"
+		},
+		{
+			"longname": "MATLAB",
+			"link": "https://alternativeto.net/software/matlab/",
+			"name_id": "matlab"
+		},
+		{
+			"longname": "Sage",
+			"link": "https://alternativeto.net/software/sage/",
+			"name_id": "sage"
+		},
+		{
+			"longname": "Mathematica",
+			"link": "https://alternativeto.net/software/mathematica/",
+			"name_id": "mathematica"
+		},
+		{
+			"longname": "SciPy \u0026 Numpy",
+			"link": "https://alternativeto.net/software/scipy--numpy/",
+			"name_id": "scipy--numpy"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Scilab",
+			"link": "https://alternativeto.net/software/scilab/",
+			"name_id": "scilab"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Orange",
+			"link": "https://alternativeto.net/software/orange/",
+			"name_id": "orange"
+		},
+		{
+			"longname": "RapidMiner",
+			"link": "https://alternativeto.net/software/rapidminer/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Tcl",
+			"link": "https://alternativeto.net/software/tcl/",
+			"name_id": "tcl"
+		},
+		{
+			"longname": "PSPP",
+			"link": "https://alternativeto.net/software/pspp/",
+			"name_id": "pspp"
+		},
+		{
+			"longname": "SymPy",
+			"link": "https://alternativeto.net/software/sympy/",
+			"name_id": "sympy"
+		},
+		{
+			"longname": "KNIME",
+			"link": "https://alternativeto.net/software/knime/",
+			"name_id": "knime"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a949"
+	},
+	"name": "Wolfram Alpha",
+	"data": {
+		"supportedPlatforms": [
+			"Web",
+			"Android",
+			"iPhone",
+			"Windows Phone",
+			"iPad",
+			"Kindle Fire"
+		]
+	},
+	"development": {
+		"developedBy": "Wolfram Alpha LLC"
+	},
+	"related-to": [
+		{
+			"longname": "fxSolver",
+			"link": "https://alternativeto.net/software/fxsolver/",
+			"name_id": "fxsolver"
+		},
+		{
+			"longname": "Insect",
+			"link": "https://alternativeto.net/software/insect--interactive-scientific-calculator/",
+			"name_id": "insect--interactive-scientific-calculator"
+		},
+		{
+			"longname": "Symbolab Math Solver",
+			"link": "https://alternativeto.net/software/symbolab-math-solver/",
+			"name_id": "symbolab-math-solver"
+		},
+		{
+			"longname": "Cymath",
+			"link": "https://alternativeto.net/software/cymath/",
+			"name_id": "cymath"
+		},
+		{
+			"longname": "Calculator",
+			"link": "https://alternativeto.net/software/google-calculator/",
+			"name_id": "google-calculator"
+		},
+		{
+			"longname": "Gnome calculator",
+			"link": "https://alternativeto.net/software/gnome-calculator/",
+			"name_id": "gnome-calculator"
+		},
+		{
+			"longname": "GNU Units",
+			"link": "https://alternativeto.net/software/gnu-units/",
+			"name_id": "gnu-units"
+		},
+		{
+			"longname": "Soulver",
+			"link": "https://alternativeto.net/software/soulver/",
+			"name_id": "soulver"
+		},
+		{
+			"longname": "SymPy Gamma",
+			"link": "https://alternativeto.net/software/sympy-gamma/",
+			"name_id": "sympy-gamma"
+		},
+		{
+			"longname": "WebMath",
+			"link": "https://alternativeto.net/software/webmath/",
+			"name_id": "webmath"
+		},
+		{
+			"longname": "galculator",
+			"link": "https://alternativeto.net/software/galculator/",
+			"name_id": "galculator"
+		},
+		{
+			"longname": "Evi",
+			"link": "https://alternativeto.net/software/true-knowledge/",
+			"name_id": "true-knowledge"
+		},
+		{
+			"longname": "OneSecondSolver",
+			"link": "https://alternativeto.net/software/onesecondsolver/",
+			"name_id": "onesecondsolver"
+		},
+		{
+			"longname": "SymCalc - Symbolic Calculator",
+			"link": "https://alternativeto.net/software/symcalc--symbolic-calculator/",
+			"name_id": "symcalc--symbolic-calculator"
+		},
+		{
+			"longname": "Sicyon calculator",
+			"link": "https://alternativeto.net/software/sicyon-calculator/",
+			"name_id": "sicyon-calculator"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a95e"
+	},
+	"name": "Wunderlist",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Web",
+			"Android",
+			"iPhone",
+			"Blackberry",
+			"Chrome OS",
+			"Windows S"
+		]
+	},
+	"development": {
+		"developedBy": "6 Wunderkinder GmbH"
+	},
+	"related-to": [
+		{
+			"longname": "Trello",
+			"link": "https://alternativeto.net/software/trello/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Todoist",
+			"link": "https://alternativeto.net/software/todoist/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "TickTick",
+			"link": "https://alternativeto.net/software/ticktick/",
+			"name_id": "ticktick"
+		},
+		{
+			"longname": "Asana",
+			"link": "https://alternativeto.net/software/asana/",
+			"name_id": "asana"
+		},
+		{
+			"longname": "WorkFlowy",
+			"link": "https://alternativeto.net/software/workflowy/",
+			"name_id": "workflowy"
+		},
+		{
+			"longname": "Wekan",
+			"link": "https://alternativeto.net/software/wekan/",
+			"name_id": "wekan"
+		},
+		{
+			"longname": "Paperwork",
+			"link": "https://alternativeto.net/software/paperwork-by-twostairs/",
+			"name_id": "paperwork-by-twostairs"
+		},
+		{
+			"longname": "Remember The Milk",
+			"link": "https://alternativeto.net/software/remember-the-milk/",
+			"name_id": "remember-the-milk"
+		},
+		{
+			"longname": "Quire",
+			"link": "https://alternativeto.net/software/quire/",
+			"name_id": "quire"
+		},
+		{
+			"longname": "Notezilla",
+			"link": "https://alternativeto.net/software/notezilla/",
+			"name_id": "notezilla"
+		},
+		{
+			"longname": "ToDoList",
+			"link": "https://alternativeto.net/software/todolist/",
+			"name_id": "todolist"
+		},
+		{
+			"longname": "Google Tasks",
+			"link": "https://alternativeto.net/software/google-tasks/",
+			"name_id": "google-tasks"
+		},
+		{
+			"longname": "Kanban Tool",
+			"link": "https://alternativeto.net/software/kanbantool/",
+			"name_id": "kanbantool"
+		},
+		{
+			"longname": "Toodledo",
+			"link": "https://alternativeto.net/software/toodledo/",
+			"name_id": "toodledo"
+		},
+		{
+			"longname": "MeisterTask",
+			"link": "https://alternativeto.net/software/meistertask/",
+			"name_id": "meistertask"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a960"
+	},
+	"name": "OmniFocus",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"iPhone",
+			"iPad"
+		]
+	},
+	"development": {
+		"developedBy": "The Omni Group"
+	},
+	"related-to": [
+		{
+			"longname": "Wunderlist",
+			"link": "https://alternativeto.net/software/wunderlist/",
+			"name_id": "wunderlist"
+		},
+		{
+			"longname": "Todoist",
+			"link": "https://alternativeto.net/software/todoist/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Asana",
+			"link": "https://alternativeto.net/software/asana/",
+			"name_id": "asana"
+		},
+		{
+			"longname": "WorkFlowy",
+			"link": "https://alternativeto.net/software/workflowy/",
+			"name_id": "workflowy"
+		},
+		{
+			"longname": "Remember The Milk",
+			"link": "https://alternativeto.net/software/remember-the-milk/",
+			"name_id": "remember-the-milk"
+		},
+		{
+			"longname": "Quire",
+			"link": "https://alternativeto.net/software/quire/",
+			"name_id": "quire"
+		},
+		{
+			"longname": "Airtable",
+			"link": "https://alternativeto.net/software/airtable/",
+			"name_id": "airtable"
+		},
+		{
+			"longname": "Toodledo",
+			"link": "https://alternativeto.net/software/toodledo/",
+			"name_id": "toodledo"
+		},
+		{
+			"longname": "Taskade",
+			"link": "https://alternativeto.net/software/taskade/",
+			"name_id": "taskade"
+		},
+		{
+			"longname": "2Do",
+			"link": "https://alternativeto.net/software/2do/",
+			"name_id": "2do"
+		},
+		{
+			"longname": "Any.do",
+			"link": "https://alternativeto.net/software/any-do/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Things",
+			"link": "https://alternativeto.net/software/things/",
+			"name_id": "things"
+		},
+		{
+			"longname": "MyLifeOrganized",
+			"link": "https://alternativeto.net/software/my-life-organized/",
+			"name_id": "my-life-organized"
+		},
+		{
+			"longname": "Taskwarrior",
+			"link": "https://alternativeto.net/software/taskwarrior/",
+			"name_id": "taskwarrior"
+		},
+		{
+			"longname": "fluxday",
+			"link": "https://alternativeto.net/software/fluxday/",
+			"name_id": "fluxday"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a962"
+	},
+	"name": "C++",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Bjarne Stroustrup"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		},
+		{
+			"longname": "Julia",
+			"link": "https://alternativeto.net/software/julia/",
+			"name_id": "julia"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a968"
+	},
+	"name": "FreeCommander",
+	"data": {
+		"supportedPlatforms": [
+			"Windows",
+			"PortableApps.com"
+		]
+	},
+	"development": {
+		"developedBy": "Marek Jasinski - Moosburg, Germany"
+	},
+	"related-to": [
+		{
+			"longname": "Double Commander",
+			"link": "https://alternativeto.net/software/double-commander/",
+			"name_id": "double-commander"
+		},
+		{
+			"longname": "Total Commander",
+			"link": "https://alternativeto.net/software/total-commander/",
+			"name_id": "total-commander"
+		},
+		{
+			"longname": "Midnight Commander",
+			"link": "https://alternativeto.net/software/midnight-commander/",
+			"name_id": "midnight-commander"
+		},
+		{
+			"longname": "Clover",
+			"link": "https://alternativeto.net/software/clover/",
+			"name_id": "clover"
+		},
+		{
+			"longname": "XYplorer",
+			"link": "https://alternativeto.net/software/xyplorer/",
+			"name_id": "xyplorer"
+		},
+		{
+			"longname": "Directory Opus",
+			"link": "https://alternativeto.net/software/directory-opus/",
+			"name_id": "directory-opus"
+		},
+		{
+			"longname": "File Explorer",
+			"link": "https://alternativeto.net/software/windows-explorer/",
+			"name_id": "windows-explorer"
+		},
+		{
+			"longname": "Multi Commander",
+			"link": "https://alternativeto.net/software/multicommander/",
+			"name_id": "multicommander"
+		},
+		{
+			"longname": "Dolphin File Manager",
+			"link": "https://alternativeto.net/software/dolphin/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Q-Dir",
+			"link": "https://alternativeto.net/software/q-dir/",
+			"name_id": "q-dir"
+		},
+		{
+			"longname": "Thunar",
+			"link": "https://alternativeto.net/software/thunar/",
+			"name_id": "thunar"
+		},
+		{
+			"longname": "Far Manager",
+			"link": "https://alternativeto.net/software/far-manager/",
+			"name_id": "far-manager"
+		},
+		{
+			"longname": "One Commander",
+			"link": "https://alternativeto.net/software/bitcommander/",
+			"name_id": "bitcommander"
+		},
+		{
+			"longname": "muCommander",
+			"link": "https://alternativeto.net/software/mucommander/",
+			"name_id": "mucommander"
+		},
+		{
+			"longname": "fman",
+			"link": "https://alternativeto.net/software/fman/",
+			"name_id": "fman"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a96d"
+	},
+	"name": "TickTick",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Web",
+			"Android",
+			"iPhone",
+			"Chrome OS",
+			"Android Tablet",
+			"iPad",
+			"Apple Watch"
+		]
+	},
+	"development": {
+		"developedBy": "Appest Limited"
+	},
+	"related-to": [
+		{
+			"longname": "Wunderlist",
+			"link": "https://alternativeto.net/software/wunderlist/",
+			"name_id": "wunderlist"
+		},
+		{
+			"longname": "Todoist",
+			"link": "https://alternativeto.net/software/todoist/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Wekan",
+			"link": "https://alternativeto.net/software/wekan/",
+			"name_id": "wekan"
+		},
+		{
+			"longname": "Remember The Milk",
+			"link": "https://alternativeto.net/software/remember-the-milk/",
+			"name_id": "remember-the-milk"
+		},
+		{
+			"longname": "Google Tasks",
+			"link": "https://alternativeto.net/software/google-tasks/",
+			"name_id": "google-tasks"
+		},
+		{
+			"longname": "Notezilla",
+			"link": "https://alternativeto.net/software/notezilla/",
+			"name_id": "notezilla"
+		},
+		{
+			"longname": "ToDoList",
+			"link": "https://alternativeto.net/software/todolist/",
+			"name_id": "todolist"
+		},
+		{
+			"longname": "Toodledo",
+			"link": "https://alternativeto.net/software/toodledo/",
+			"name_id": "toodledo"
+		},
+		{
+			"longname": "Org mode",
+			"link": "https://alternativeto.net/software/org-mode/",
+			"name_id": "org-mode"
+		},
+		{
+			"longname": "Taskade",
+			"link": "https://alternativeto.net/software/taskade/",
+			"name_id": "taskade"
+		},
+		{
+			"longname": "Task Coach",
+			"link": "https://alternativeto.net/software/task-coach/",
+			"name_id": "task-coach"
+		},
+		{
+			"longname": "Things",
+			"link": "https://alternativeto.net/software/things/",
+			"name_id": "things"
+		},
+		{
+			"longname": "Any.do",
+			"link": "https://alternativeto.net/software/any-do/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Todo.txt",
+			"link": "https://alternativeto.net/software/todotxt/",
+			"name_id": "todotxt"
+		},
+		{
+			"longname": "2Do",
+			"link": "https://alternativeto.net/software/2do/",
+			"name_id": "2do"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a971"
+	},
+	"name": "Double Commander",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Alexander Koblov, Przemyslaw Nagay"
+	},
+	"related-to": [
+		{
+			"longname": "Total Commander",
+			"link": "https://alternativeto.net/software/total-commander/",
+			"name_id": "total-commander"
+		},
+		{
+			"longname": "FreeCommander",
+			"link": "https://alternativeto.net/software/freecommander/",
+			"name_id": "freecommander"
+		},
+		{
+			"longname": "Midnight Commander",
+			"link": "https://alternativeto.net/software/midnight-commander/",
+			"name_id": "midnight-commander"
+		},
+		{
+			"longname": "XYplorer",
+			"link": "https://alternativeto.net/software/xyplorer/",
+			"name_id": "xyplorer"
+		},
+		{
+			"longname": "File Explorer",
+			"link": "https://alternativeto.net/software/windows-explorer/",
+			"name_id": "windows-explorer"
+		},
+		{
+			"longname": "Multi Commander",
+			"link": "https://alternativeto.net/software/multicommander/",
+			"name_id": "multicommander"
+		},
+		{
+			"longname": "Directory Opus",
+			"link": "https://alternativeto.net/software/directory-opus/",
+			"name_id": "directory-opus"
+		},
+		{
+			"longname": "Nautilus",
+			"link": "https://alternativeto.net/software/nautilus/",
+			"name_id": "nautilus"
+		},
+		{
+			"longname": "Dolphin File Manager",
+			"link": "https://alternativeto.net/software/dolphin/about/",
+			"name_id": "about"
+		},
+		{
+			"longname": "Q-Dir",
+			"link": "https://alternativeto.net/software/q-dir/",
+			"name_id": "q-dir"
+		},
+		{
+			"longname": "Far Manager",
+			"link": "https://alternativeto.net/software/far-manager/",
+			"name_id": "far-manager"
+		},
+		{
+			"longname": "One Commander",
+			"link": "https://alternativeto.net/software/bitcommander/",
+			"name_id": "bitcommander"
+		},
+		{
+			"longname": "Thunar",
+			"link": "https://alternativeto.net/software/thunar/",
+			"name_id": "thunar"
+		},
+		{
+			"longname": "Nemo",
+			"link": "https://alternativeto.net/software/nemo/",
+			"name_id": "nemo"
+		},
+		{
+			"longname": "muCommander",
+			"link": "https://alternativeto.net/software/mucommander/",
+			"name_id": "mucommander"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a980"
+	},
+	"name": "D (Programming Language)",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Walter Bright, now the D Language Foundation"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "PHP",
+			"link": "https://alternativeto.net/software/php/",
+			"name_id": "php"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
+		},
+		{
+			"longname": "Nim (programming language)",
+			"link": "https://alternativeto.net/software/nim-programming-language/",
+			"name_id": "nim-programming-language"
+		},
+		{
+			"longname": "Apple Swift",
+			"link": "https://alternativeto.net/software/swift-programming-language/",
+			"name_id": "swift-programming-language"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5c6c114c40ce43bdc279a987"
+	},
+	"name": "Nim (programming language)",
+	"data": {
+		"supportedPlatforms": [
+			"Mac",
+			"Windows",
+			"Linux",
+			"BSD"
+		]
+	},
+	"development": {
+		"developedBy": "Andreas Rumpf \u0026 Contributors"
+	},
+	"related-to": [
+		{
+			"longname": "Python",
+			"link": "https://alternativeto.net/software/python/",
+			"name_id": "python"
+		},
+		{
+			"longname": "Java",
+			"link": "https://alternativeto.net/software/java/",
+			"name_id": "java"
+		},
+		{
+			"longname": "C (programming language)",
+			"link": "https://alternativeto.net/software/c-programming-language-/",
+			"name_id": "c-programming-language-"
+		},
+		{
+			"longname": "C++",
+			"link": "https://alternativeto.net/software/cpp/",
+			"name_id": "cpp"
+		},
+		{
+			"longname": "Ruby",
+			"link": "https://alternativeto.net/software/ruby/",
+			"name_id": "ruby"
+		},
+		{
+			"longname": "C#",
+			"link": "https://alternativeto.net/software/c--programming-language-/",
+			"name_id": "c--programming-language-"
+		},
+		{
+			"longname": "R (programming language)",
+			"link": "https://alternativeto.net/software/r-project/",
+			"name_id": "r-project"
+		},
+		{
+			"longname": "Lua",
+			"link": "https://alternativeto.net/software/lua/",
+			"name_id": "lua"
+		},
+		{
+			"longname": "Go (Programming Language)",
+			"link": "https://alternativeto.net/software/go-programming-language-/",
+			"name_id": "go-programming-language-"
+		},
+		{
+			"longname": "Rust",
+			"link": "https://alternativeto.net/software/rust/",
+			"name_id": "rust"
+		},
+		{
+			"longname": "Perl",
+			"link": "https://alternativeto.net/software/perl/",
+			"name_id": "perl"
+		},
+		{
+			"longname": "Haskell",
+			"link": "https://alternativeto.net/software/haskell/",
+			"name_id": "haskell"
+		},
+		{
+			"longname": "Dart",
+			"link": "https://alternativeto.net/software/dart/",
+			"name_id": "dart"
+		},
+		{
+			"longname": "D (Programming Language)",
+			"link": "https://alternativeto.net/software/d/",
+			"name_id": "d"
+		},
+		{
+			"longname": "Scala",
+			"link": "https://alternativeto.net/software/scala/",
+			"name_id": "scala"
 		}
 	]
 }]
